@@ -25,12 +25,12 @@ class User(db.Model):
 class Character(db.Model):
     __tablename__ = "character"
     id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(50), nullable = False)
-    gender = db.Column(db.String(50), nullable = False)
+    name = db.Column(db.String(250), nullable = False)
+    gender = db.Column(db.String(250), nullable = False)
     height = db.Column(db.Integer, nullable = False)
-    skin_color = db.Column(db.String(50), nullable = False)
-    eyes_color = db.Column(db.String(50), nullable = False)
-    birth_year = db.Column(db.String(50), nullable = False)
+    skin_color = db.Column(db.String(250), nullable = False)
+    eyes_color = db.Column(db.String(250), nullable = False)
+    birth_year = db.Column(db.String(250), nullable = False)
 
     def __repr__(self):
         return f'<Character {self.id}>'
